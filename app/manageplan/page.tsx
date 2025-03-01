@@ -10,11 +10,9 @@ function ManagePlan() {
           <p className="text-center text-xl font-medium">
             This is the hero section for managing your plan.
           </p>
+          <SchematicComponent componentId="cmpn_Czd1JK4Fpkd" />
         </div>
       </section>
-      <div>
-        <SchematicComponent componentId="cmpn_Czd1JK4Fpkdn" />
-      </div>
     </>
   );
 }

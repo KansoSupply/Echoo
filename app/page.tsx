@@ -133,21 +133,22 @@ export default function Home() {
                 className="flex flex-col items-center p-16 rounded-xl gap-4  bg-neutral-900"
               >
                 <Icon className="text-lime-400" />
-                <h3 className="text-white text-3xl">{step.title}</h3>
-                <p className="text-white text-xl">{step.description}</p>
+                <h3 className="text-xl text-white font-semibold">
+                  {step.title}
+                </h3>
+                <p className="text-center text-gray-400">{step.description}</p>
               </div>
             );
           })}
         </div>
       </section>
-      <footer>
-        <footer className="w-full py-8 bg-neutral-900">
-          <div className="max-w-xl mx-auto text-center">
-            <p className="text-gray-500">
-              &copy; {new Date().getFullYear()} Echoo. All rights reserved.
-            </p>
-          </div>
-        </footer>
+
+      <footer className="w-full py-8 bg-neutral-900">
+        <div className="max-w-xl mx-auto text-center">
+          <p className="text-gray-500">
+            &copy; {new Date().getFullYear()} Echoo. All rights reserved.
+          </p>
+        </div>
       </footer>
     </div>
   );
