@@ -3,6 +3,7 @@
 import YoutubeVideoForm from "@/components/YoutubeVideoForm";
 import { Mic, FileText, Key, Smile, Globe, Video } from "lucide-react";
 import { motion } from "framer-motion";
+
 const steps = [
   {
     title: "Paste YouTube URL",
@@ -78,8 +79,8 @@ export default function Home() {
               Instantly transcribe and summarize any YouTube video.
             </motion.h1>
           </div>
-          <p className="text-lg text-center text-gray-500 mt-4">
-            Meet Echoo — Your personal assistent to analyze any YouTube video in
+          <p className="text-lg text-center text-white mt-4">
+            Meet Echoo — Your personal assistant to analyze any YouTube video in
             seconds, so you can get to insights that matter.
           </p>
         </div>
