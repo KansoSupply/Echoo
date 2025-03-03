@@ -1,6 +1,7 @@
 "use server";
 
-// import { getVideoIdFromUrl } from "lib/youtube/getVideoIdFromUrl";
+import { getVideoIdFromUrl } from "@/lib/getVideoIdFromUrl";
+import { video } from "motion/react-client";
 
 import { redirect } from "next/navigation";
 
@@ -10,7 +11,10 @@ export async function analyseYoutubeVideo(formData: FormData) {
     return;
   }
 
-  const videoId = "getVideoIdFromUrl(url)";
+  const videoId = getVideoIdFromUrl(url);
+
+  console.log(`videoId is ${videoId}`);
+
   if (!videoId) return;
 
   // redirect to the new post
